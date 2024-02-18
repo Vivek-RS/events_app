@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "f477fabc-12f0-45cc-8564-a8916c7cb57a",
+		"name": "EventsApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7441097"
+	},
+	"item": [
+		{
+			"name": "create_event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"title\": \"event1\",\r\n    \"description\": \"description1\",\r\n    \"start_time\": \"2023-02-17 14:30:00+05:30\",\r\n    \"end_time\": \"2023-02-28 14:30:00+05:30\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/create_event/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"create_event",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"event1\",\r\n    \"description\": \"description1\",\r\n    \"start_time\": \"2023-02-28 14:30:00+05:30\",\r\n    \"end_time\": \"2023-02-29 14:30:00+05:30\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete_event/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete_event",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_event",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"event1\",\r\n    \"description\": \"description1\",\r\n    \"start_time\": \"2023-02-28 14:30:00+05:30\",\r\n    \"end_time\": \"2023-02-29 14:30:00+05:30\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/update_event/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update_event",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"event1\",\r\n    \"description\": \"description1\",\r\n    \"start_time\": \"2023-02-28 14:30:00+05:30\",\r\n    \"end_time\": \"2023-02-29 14:30:00+05:30\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_event/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_event",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

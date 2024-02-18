@@ -7,7 +7,7 @@ Simple Flask application that allows users to add, view, update, and delete even
 - Clone repo
 
 ```
-git clone <git path>
+git clone https://github.com/Vivek-RS/events_app.git
 ```
 
 - 2 - create a virtual environment and activate
@@ -25,7 +25,9 @@ pip install -r requiremets.txt
 python app.py
 
 database initialization will be happened during app initialization
+postman collection is added in the repositry (EventsApi.postman_collection.json)
 ```
+
 
 #### Features
 
